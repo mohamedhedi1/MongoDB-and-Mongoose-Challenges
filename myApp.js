@@ -25,11 +25,10 @@ const createAndSavePerson = (done) => {
    age:21,
    favoriteFoods:["pizza"]
  })
- hedi.save((error,data)=>
- {
-   
-     done(error,data)
- })
+ hedi.save(function(err, data) {
+  if (err) return console.error(err);
+  done(null, data)
+});
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
