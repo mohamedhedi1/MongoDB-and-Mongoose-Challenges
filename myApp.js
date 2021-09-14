@@ -19,7 +19,7 @@ const personSchema = new Schema({
 let Person= new personSchema({
   name:"Hedi",
   age:21,
-  favoriteFoods=["pizza","fish"]
+  favoriteFoods:["pizza","fish"]
 })
 
 const createAndSavePerson = (done) => {
