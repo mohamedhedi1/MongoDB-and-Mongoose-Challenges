@@ -27,9 +27,7 @@ const createAndSavePerson = (done) => {
  })
  hedi.save((error,data)=>
  {
-   if(error)
-    console.error(error);
-    else
+   
      done(error,data)
  })
 };
